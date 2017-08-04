@@ -1,3 +1,8 @@
+/**
+ * @param {number} x
+ * @param {number} y
+ * @return {number} HD
+ */
 var hammingdistance = function (x, y) {
     var xB = x.toString(2);
     var yB = y.toString(2);
@@ -27,11 +32,11 @@ var hammingdistance = function (x, y) {
     for(var i = 0; i < yB.length; i++)
     {
         if(yB.charAt(i) != (xB.charAt(i)))
-        {
+        {   
             HD = HD + 1;
         }
     }
     return HD;
 };
 
-console.log(hammingdistance(4, 2))  ;
+console.log(hammingdistance(4, 2));
