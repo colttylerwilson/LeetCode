@@ -3,7 +3,7 @@
  * @param {number} y
  * @return {number} HD
  */
-var hammingdistance = function (x, y) {
+var hammingDistance = function (x, y) {
     this.x = x;
     this.y = y;
     var xB = this.x.toString(2);
@@ -50,5 +50,3 @@ var hammingdistance = function (x, y) {
     }
     return HD;
 };
-
-console.log(hammingdistance(2147483647, 0));
