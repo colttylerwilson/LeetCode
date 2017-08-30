@@ -77,8 +77,3 @@ var islandPerimeter = function (grid) {
     };
     return number;
 };
-
-var island =
-    [[1, 1], [1, 1]];
-
-console.log(islandPerimeter(island));
