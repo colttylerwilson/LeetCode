@@ -37,6 +37,7 @@ var findRedundantConnection = function (edges) {
 
         unionFindItems.push(temp);
     }
+
     while(edges.length > 0) {
         if(UnionFindFind(edges[0][0]) < 0 && UnionFindFind(edges[0][1]) < 0) {
             UnionFindCreate(edges[0]);
@@ -58,5 +59,5 @@ var findRedundantConnection = function (edges) {
             edges.splice(0,1);
         }
     }
-    return notused[0][0];
+    return notused[0][notused[0].length -1];
 }
